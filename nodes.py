@@ -116,3 +116,15 @@ class QwenExtension(ComfyExtension):
 
 async def comfy_entrypoint() -> QwenExtension:
     return QwenExtension()
+
+
+NODE_CLASS_MAPPINGS = {
+    "TextEncodeQwenImageEdit_FromRapid": TextEncodeQwenImageEdit_FromRapid,
+    "TextEncodeQwenImageEditPlus_FromRapid": TextEncodeQwenImageEditPlus_FromRapid
+}
+
+# Display name mappings
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "TextEncodeQwenImageEdit_FromRapid": TextEncodeQwenImageEdit_FromRapid,
+    "TextEncodeQwenImageEditPlus_FromRapid": TextEncodeQwenImageEditPlus_FromRapid
+}
